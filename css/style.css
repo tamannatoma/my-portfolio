@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -44,13 +47,13 @@ nav ul li a:hover {
   
 }
 .welcome-section {
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100%;
-    /*background-color: #121313;*/
+    position: relative;
     background-image: url(nature.jpg);
     background-size: cover;
     color: rgb(236, 219, 219);
@@ -166,7 +169,6 @@ img:hover{
     justify-content: center;
     color: beige;
     text-decoration: none;
-    transition: 0.5;
     margin-top: 20px;
     text-shadow: 2px 2px 2px #551212;
     padding-left: 20px;
@@ -181,7 +183,9 @@ img:hover{
     
 
 }
-
+#icon {
+    padding-right: 5px;
+}
 .footer-section {
     height: 10vh;
     width: 100%;
@@ -191,7 +195,10 @@ img:hover{
     justify-content: space-evenly;
     font-size: 20px;
     align-items: center;
-}    
+} 
+.footer-section p {
+    padding-left: 5px;
+}   
 .footer-section a {
     text-decoration: none;
     color: beige;
@@ -235,7 +242,7 @@ img:hover{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 80vh;
+        height: 50vh;
         width: 100%;
         /*background-color: #121313;*/
         background-image: url(nature.jpg);
@@ -248,7 +255,9 @@ img:hover{
         margin-bottom: 0px;
         text-align: center;
     }
-       
+     .welcome-section p {
+        padding-top: 15px;
+     }  
     .projects {
     display: flex;
     flex-direction: column;
@@ -259,7 +268,7 @@ img:hover{
     
    }
    .last-section {
-    height: 60vh;
+    height: 40vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -270,14 +279,12 @@ img:hover{
     border-bottom: 5px solid  brown;
     color: beige;
     }
-    .contact-link {
-        margin-top: 10px;
-        height: 40vh;
+    .contact {
+        height: 30vh;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 20px;
+        align-content: flex-end;
+       
+        
     }
     .contact h1 {
         font-size: 2rem;
@@ -287,6 +294,18 @@ img:hover{
     .contact p {
         font-size: 20px;
         font-style: italic;
+    }
+    .contact-link {
+        margin-top: 10px;
+        height: 40vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 20px;
+    }
+    #icon {
+        padding-right: 5px;
     }
     .footer-section {
         height: 10vh;
@@ -298,5 +317,9 @@ img:hover{
         justify-content: space-evenly;
         font-size: 15px;
         align-items: center;
+  
+    }
+    .footer-section p {
+        padding-left: 20px;
     }
 }
